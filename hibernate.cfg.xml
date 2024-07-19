@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>                                      
+        <property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+        <property name="hibernate.connection.password">13022003</property>
+        <property name="hibernate.connection.url">jdbc:sqlserver://localhost:1433;databaseName=qltv;encrypt=true;trustServerCertificate=true;useUnicode=true;characterEncoding=UTF-8</property>
+        <property name="hibernate.connection.username">sa</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.connection.characterEncoding">UTF-8</property>
+        <property name="hibernate.connection.useUnicode">true</property>
+        <property name="hibernate.connection.charSet">UTF-8</property>
+        
+        <mapping class="Model.TacGiaModel"/>
+        <mapping class="Model.TheLoaiModel"/>
+        <mapping class="Model.QuyDinhModel"/>
+        <mapping class="Model.NhanVienModel"/>
+        <mapping class="Model.DocGiaModel"/>
+        <mapping class="Model.PhieuMuonModel"/>
+        <mapping class="Model.SachModel"/>
+        <mapping class="Model.PhieuTraModel"/>
+        <mapping class="Model.CT_PhieuTraModel"/>
+        <mapping class="Model.BCTheoTheLoaiModel"/>
+        <mapping class="Model.CT_BCTheoTheLoaiModel"/>
+        <mapping class="Model.LoaiDocGiaModel"/>
+        <mapping class="Model.PhieuThuTienModel"/>
+        <mapping class="Model.BCSachTraTreModel"/>
+        <mapping class="Model.CT_BCSachTraTreModel"/>
+        <mapping class="Model.VaiTroModel"/>
+        <mapping class="Model.TaiKhoaModel"/>
+        <mapping class="Model.NhanVienModel"/>
+    </session-factory>
+</hibernate-configuration>
